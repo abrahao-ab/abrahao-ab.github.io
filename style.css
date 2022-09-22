@@ -1,0 +1,370 @@
+
+/*GERAIS*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center
+{
+    display: flex;
+    max-width: 100%;
+    padding: 0 2%;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+
+/*SEÇÃO MENU PRINCIPAL*/
+section.main 
+{
+    background-color: #27282D;
+    background-position: center;
+    background-size: cover;
+    min-height: 20px;
+    padding:20px 0 80px 0;
+}
+
+.menu
+{
+    display: flex;
+    width: 100%;
+}
+
+.items-menu
+{
+    text-align: right;
+    padding-left: auto;
+    width: 50%;
+}
+
+.logo-menu
+{
+    width: 50%;
+}
+
+.items-menu a
+{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+section.main .items-menu a:hover
+{
+    border-bottom: 2px solid #ccc;
+}   
+
+.items-menu a.contact-btn
+{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.items-menu a.contact-btn:hover
+{
+    border: 0;
+}
+
+/*SEÇÃO APRESENTAÇÃO*/
+section.apresentacao
+{
+        background-color: #27282D;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+        padding:20px 0 80px 0;
+}
+.mockup
+{
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    width: 50%;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.mockup p 
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mockup h1
+{
+    font-size: 50px;
+}
+
+.character
+{
+    display: flex;
+    flex-wrap: wrap;
+    transform: scaleX(-1);
+    padding-top: 100px;
+    max-width: 100%;
+    width: 200px;
+}
+
+/*SEÇÃO SOBRE MIM*/
+section.sobremim
+{
+    background-color: #27282D;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    padding:20px 0 80px 0;
+    
+}
+
+section.sobremim > .center
+{
+    max-width: 100%
+}
+.container-sobremim
+{
+    max-width: 70%;
+}
+.container-sobremim h2
+{
+    max-width: 100%;
+    margin-left: 50px;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+}
+
+.container-sobremim p
+{
+    max-width: 100%;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    display: block;
+
+}
+
+.acenando
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    max-width: 70%;
+    width: 200px;
+}
+
+/*SEÇÃO HABILIDADES*/
+section.habilidades
+{
+    padding: 50px 0;
+    background-color: #27282D;
+    height: 500px;
+}
+
+
+.habilidades h2
+{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+}
+
+.container-habilidades
+{
+    padding-top: 20px;
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.container-habilidades img
+{
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+    
+}
+
+
+.descricao-habilidades
+{
+    border: 4px solid #7f7f7f;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.desc
+{
+    padding-left: 20px;
+    font-family: 'Silkscreen', cursive;
+    text-align: left;
+    justify-content: center;
+}
+
+/*ILUMINA O QUADRINHO AMARELO AO REDOR*/
+.habilidade img:hover
+{
+    border: 1px solid yellow;
+}
+/*RODAPÉ*/
+footer
+{
+    padding: 0;
+    background-image: linear-gradient(#777 20%, #fff);
+    color: white;
+}
+
+.text-footer
+{
+    color: black;
+    width: 50%;
+    padding: 20px 0;
+}
+
+footer .center .items-menu a
+{
+    color: #000;
+    text-align: right;
+}
+
+footer .center .items-menu a.contact-btn
+{
+    color: white;
+}
+
+.items-menu-mobile
+{
+    width: 50%;
+    text-align: right;
+    display: none;
+}
+
+.items-menu-mobile i
+{
+    
+    color: white;
+    position: relative;
+    top: 15px;
+    margin-right: 20px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.items-menu-mobile .show a,
+.items-menu-mobile a
+{
+    color: white;
+}
+
+/*RESPONSIVIDADE APLICADA AQUI*/
+@media screen and (max-width: 850px) {
+
+    .items-menu
+    {
+        display: none;
+    }
+    .items-menu-mobile{
+        display: block;
+       
+    }
+
+    .menu-mobile{
+        display: none;
+        opacity: 0;
+        position: absolute;
+        left:0;
+        top:65px;
+        background-color: #27282D;
+        width:100%;
+        padding:15px 0;
+        text-align: center;
+    }
+
+    .show{
+       opacity: 1;
+    }
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin:8px 0;
+        color:rgb(40,40,40);
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom:1px solid rgb(40,40,40);
+        padding:8px 0;
+    }
+
+
+    .container-habilidades
+    {
+        padding-top: 0;
+        align-items: center;
+    }
+
+    .container-habilidades img
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .descricao-habilidades
+    {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+
+    .text-footer
+    {
+        text-align: center;
+    }
+    .items-menu > a
+    {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .mockup
+    {
+	    width: 100%;
+    }
+
+    .character
+    {
+        padding-top: 0;
+    }    
+
+     .sobremim > .center, .container-sobremim h2, .container-sobremim p
+    {
+        width: 100%;
+    }
+    .acenando
+    {
+        padding-left: 50px;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .acenando img
+    {
+        width: 200px;
+    }
+}
